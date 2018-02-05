@@ -1,24 +1,56 @@
-<link href="https://fonts.googleapis.com/css?family=Monoton|Work+Sans" rel="stylesheet">
+<script
+  src="http://code.jquery.com/jquery-3.3.1.js"
+  integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="
+  crossorigin="anonymous">
+</script>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+<link href="https://fonts.googleapis.com/css?family=Lato|Lobster" rel="stylesheet">
 
-<div class="container py-4">
-  <h1>Very Fun Data Science</h1>
-
-  <p class="new-link"><%= link_to 'New article', new_article_path %></p>
-
-  <% @articles.each do |article| %>
-    <div class="article">
-      <h2><%= article.title %></h2>
-      <p><%= article.text%></p>
-      <table>
-        <tr>
-          <td><%= link_to 'Show', article_path(article) %></td>
-          <td><%= link_to 'Edit', edit_article_path(article) %></td>
-          <td><%= link_to 'Delete', article_path(article),
-                  method: :delete,
-                  data: { confirm: 'You sure?' } %></td>
-        </tr>
-      </table>
+<nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+  <a class="navbar-brand header" href="#">Very Fun Data Science</a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+    <div class="navbar-nav">
+      <a class="nav-item nav-link active" href="#">Home <span class="sr-only">(current)</span></a>
+      <a class="nav-item nav-link" href="#">About</a>
+      <a class="nav-item nav-link" href="#">Stuff</a>
     </div>
-  <% end %>
+  </div>
+</nav>
 
-</div>
+<body>
+  <div class="container py-4">
+    <!-- <h1 class="header">Very Fun Data Science</h1> -->
+
+    <p class="new-link"><%= link_to 'New article', new_article_path %></p>
+
+    <% @articles.each do |article| %>
+      <div class="article card">
+        <div class="card-header">
+          <h2><%= article.title %></h2>
+        </div>
+        <div class="card-body">
+          <p><%= article.text%></p>
+          <table>
+            <tr>
+              <td><%= link_to 'Show', article_path(article) %> | </td>
+              <td><%= link_to 'Edit', edit_article_path(article) %> | </td>
+              <td><%= link_to 'Delete', article_path(article),
+                      method: :delete,
+                      data: { confirm: 'You sure?' } %></td>
+            </tr>
+          </table>
+        </div>
+      </div>
+    <% end %>
+
+  </div>
+
+  <footer class="blog-footer bg-primary">
+          <div class="container-fluid">
+              © 2018 Copyright: The Very Fun Team </a>
+          </div>
+  </footer>
+</body>

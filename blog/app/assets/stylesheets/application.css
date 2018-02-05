@@ -27,21 +27,30 @@ html {
 
 body {
   height: 100%;
-  padding: 30px;
-  font-family: 'Work Sans';
 }
 
-h1 {
+.blog-footer {
+    padding: 2.5rem 0;
+    color: #fff;
+    text-align: center;
+    background-color: #f9f9f9;
+    border-top: .05rem solid #e5e5e5;
+}
+
+.header {
   font-size: 5em;
-  font-family: 'Monoton', cursive;
+  font-family: 'Lobster', cursive;
 }
 
 .article {
-  width: 60%;
+  width: 80%;
+  font-family: 'Lato';
+  margin: 50px 0 50px 0;
 }
 
 .new-link {
   position: absolute;
+  font-family: 'Lato';
   right: 0px;
   width: 300px;
 }
