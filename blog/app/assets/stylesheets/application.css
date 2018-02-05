@@ -13,3 +13,25 @@
  *= require_tree .
  *= require_self
  */
+
+/* Vendor */
+@import "bootstrap";
+
+/* Scopes */
+@import "articles";
+@import "comments";
+
+html {
+  height: 100%;
+}
+
+body {
+  height: 100%;
+  padding: 30px;
+  font-family: 'Work Sans';
+}
+
+h1 {
+  font-size: 5em;
+  font-family: 'Monoton', cursive;
+}
