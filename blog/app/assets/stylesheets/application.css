@@ -21,20 +21,16 @@
 @import "articles";
 @import "comments";
 
-html {
-  height: 100%;
-}
-
 body {
   height: 100%;
 }
 
 .blog-footer {
-    padding: 2.5rem 0;
-    color: #fff;
-    text-align: center;
-    background-color: #f9f9f9;
-    border-top: .05rem solid #e5e5e5;
+  padding: 2.5rem 0;
+  color: #fff;
+  text-align: center;
+  background-color: #f9f9f9;
+  border-top: .05rem solid #e5e5e5;
 }
 
 .header {
@@ -52,4 +48,10 @@ body {
   font-family: 'Lato';
   right: 0px;
   width: 300px;
+}
+
+.scroll {
+   padding-top: 50px;
+   padding-bottom: 50px;
+   transition: all 1s;
 }

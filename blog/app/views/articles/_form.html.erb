@@ -16,16 +16,18 @@
 
   <p>
     <%= form.label :title %><br>
-    <%= form.text_field :title %>
+    <%= form.text_field :title, style: 'width:100%;' %>
   </p>
 
   <p>
     <%= form.label :text %><br>
-    <%= form.text_area :text %>
+    <%= form.text_area :text, :rows => 20, style: 'width:100%;' %>
   </p>
 
-  <p>
-    <%= form.submit %>
-  </p>
+
+  <div class="btn-group">
+    <%= form.submit :Submit, class: 'btn btn-outline-success' %>
+    <%= link_to 'Back', articles_path, :class => "btn btn-outline-secondary" %>
+  </div>
 
 <% end %>

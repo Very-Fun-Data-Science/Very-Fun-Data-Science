@@ -5,9 +5,9 @@
   </p>
   <p>
     <%= form.label :body %><br>
-    <%= form.text_area :body %>
+    <%= form.text_area :body, :rows => 5, style: 'width:50%;' %>
   </p>
   <p>
-    <%= form.submit %>
+    <%= form.submit :"Create Comment", class: 'btn btn-outline-success' %>
   </p>
 <% end %>
