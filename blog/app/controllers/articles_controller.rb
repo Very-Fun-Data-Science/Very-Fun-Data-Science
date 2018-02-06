@@ -1,5 +1,7 @@
 class ArticlesController < ApplicationController
 
+  before_action :verify_admin, except: [:index, :show]
+
   def index
     @articles = Article.all
   end
@@ -43,10 +45,19 @@ class ArticlesController < ApplicationController
     redirect_to articles_path
   end
 
+  def admin_landing
+  end
+
   private
 
   def article_params
     params.require(:article).permit(:title, :text)
   end
 
-end
+  def verify_admin
+    unless current_user
+      redirect_to login_path
+    end
+  end
+
+  end

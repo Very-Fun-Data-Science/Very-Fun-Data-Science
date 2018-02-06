@@ -3,24 +3,23 @@
   <head>
     <meta charset="utf-8">
     <title>Very Fun Data Science</title>
-    <!-- <script
+    <script
       src="http://code.jquery.com/jquery-3.3.1.js"
       integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="
       crossorigin="anonymous">
     </script>
-    <script type="text/javascript">
+    <!-- <script type="text/javascript">
       $(document).ready(function () {
           $(window).on('scroll', function () {
               if ($(window).scrollTop() >= 20) { // use any value lower than the navbar height, [20] is an example
-                  $('.scroll').css({ // reducing the vertical padding from 25px to 10px
-                      'padding-top': '10px',
-                      'padding-bottom': '10px'
+                  $('.navbar').css({ // reducing the vertical padding from 10px to 10px
+                      'padding': '.5rem 1rem'
                   });
                   $('.header').css({
                       'font-size': '20px',
                   });
               } else {
-                  $('.scroll').css({ // reset the vertical padding to its initial value [25px]
+                  $('.navbar').css({ // reset the vertical padding to its initial value [25px]
                       'padding-top': '50px',
                       'padding-bottom': '50px'
                   });
@@ -49,7 +48,7 @@
             <div class="btn-group">
               <%= link_to 'Show', article_path(article), :class => "btn btn-outline-secondary" %>
               <%= link_to 'Edit', edit_article_path(article), :class => "btn btn-outline-secondary" %>
-              <%= link_to 'Delete', article_path(article), :class => "btn btn-outline-secondary" %>
+              <%= link_to 'Delete', article_path(article), method: :delete, :class => "btn btn-outline-secondary" %>
             </div>
 
           </div>

@@ -35,6 +35,8 @@ body {
 
 .header {
   font-family: 'Lobster', cursive;
+  font-size: 50px;
+  transition: all 1s;
 }
 
 .article {
@@ -50,8 +52,8 @@ body {
   width: 300px;
 }
 
-.scroll {
-   padding-top: 50px;
-   padding-bottom: 50px;
+.navbar {
+   /* padding-top: 50px;
+   padding-bottom: 50px; */
    transition: all 1s;
 }
