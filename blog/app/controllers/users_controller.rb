@@ -1,12 +1,11 @@
 class UsersController < ApplicationController
   def new
+    puts flash[:errors]
   end
 
   def create
-    unless WhiteList.exists?(:email => params[:user][:email])
-      errors.add :email, "is not on our beta list."
-    else
-      @user = User.new(user_params)
+    redirect_to signup_path unless ['cernhofer@gmail.com', 'hayleeham@gmail.com', 'sushmitavgopalan@uchicago.edu'].include? params[:email]
+    @user = User.new(user_params)
 
     if @user.save
       login_user(@user)

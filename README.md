@@ -9,3 +9,4 @@ Currently building the blog in Rails.
 - [ ] Be able to input images and markdown in articles
 - [ ] Add breakpoint to articles so they are only yea long
 - [ ] Add pagination
+- [ ] Ability to add tags
