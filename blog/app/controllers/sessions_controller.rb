@@ -1,7 +1,7 @@
 class SessionsController < ApplicationController
   def new
     # redirect_to profile_path(current_user.username) if current_user
-    redirect_to root_url if current_user
+    redirect_to admin_url if current_user
   end
 
   def create
@@ -10,7 +10,7 @@ class SessionsController < ApplicationController
     if @user&.authenticate(params[:session][:password])
       login_user(@user)
       # redirect_to profile_path(current_user.username) if current_user
-      redirect_to root_url
+      redirect_to admin_url
     else
       flash[:email] = params[:session][:email]
       flash[:error] = "The email or password you entered was incorrect."

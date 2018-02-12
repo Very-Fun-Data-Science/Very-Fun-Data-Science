@@ -7,7 +7,7 @@ class UsersController < ApplicationController
 
     if @user.save
       login_user(@user)
-      redirect_to root_url
+      redirect_to admin_url
     else
       flash[:errors] = @user.errors.messages
       redirect_to signup_path

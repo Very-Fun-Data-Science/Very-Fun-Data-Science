@@ -10,6 +10,8 @@ Currently building the blog in Rails.
 - [ ] Add breakpoint to articles so they are only yea long
 - [ ] Add pagination
 - [ ] Ability to add tags
-- [ ] Create account page to edit and create new articles
+- [x] Create account page to edit and create new articles
 - [ ] Add an are you sure prompt before deletion
-- [ ] Create a login url /admin or something
+- [x] Create a login url /admin or something
+- [ ] Show authors on articles (add names to users schema)
+- [ ] Add author to articles model
