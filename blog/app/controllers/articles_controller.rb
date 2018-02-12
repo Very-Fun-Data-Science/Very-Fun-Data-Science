@@ -3,7 +3,7 @@ class ArticlesController < ApplicationController
   before_action :verify_admin, except: [:index, :show]
 
   def index
-    @articles = Article.all
+    @articles = Article.all.order(created_at: :desc)
   end
 
   def show
@@ -45,13 +45,10 @@ class ArticlesController < ApplicationController
     redirect_to articles_path
   end
 
-  def admin_landing
-  end
-
   private
 
   def article_params
-    params.require(:article).permit(:title, :text)
+    params.require(:article).permit(:title, :text, user_ids: [])
   end
 
   def verify_admin

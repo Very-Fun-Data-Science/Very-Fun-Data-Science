@@ -8,7 +8,7 @@ Rails.application.routes.draw do
   post '/login' => 'sessions#create'
   get '/logout' => 'sessions#destroy'
 
-  get '/about' => 'articles#about'
+  get '/about' => 'static_pages#about'
 
   resources :articles do
     resources :comments

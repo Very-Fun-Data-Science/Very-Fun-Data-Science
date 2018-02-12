@@ -19,6 +19,16 @@
     <%= form.text_field :title, style: 'width:100%;' %>
   </p>
 
+  <div class="form-group">
+    <%= form.label :authors %>
+    <%= form.collection_check_boxes(:user_ids, User.all, :id, :email) do |check_box| %>
+      <div class="form-check">
+        <%= check_box.check_box(class: 'form-check-input') %>
+        <%= check_box.label(class: 'form-check-label') %>
+      </div>
+    <% end %>
+  </div>
+
   <p>
     <%= form.label :text %><br>
     <%= form.text_area :text, :rows => 20, style: 'width:100%;' %>
