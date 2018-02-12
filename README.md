@@ -15,3 +15,4 @@ Currently building the blog in Rails.
 - [x] Create a login url /admin or something
 - [ ] Show authors on articles (add names to users schema)
 - [ ] Add author to articles model
+- [ ] Fix header and have movement happen only on blog
