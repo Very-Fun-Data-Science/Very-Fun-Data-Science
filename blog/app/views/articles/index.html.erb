@@ -1,58 +1,16 @@
-<!DOCTYPE html>
-<html>
-  <head>
-    <meta charset="utf-8">
-    <title>Very Fun Data Science</title>
-    <script
-      src="http://code.jquery.com/jquery-3.3.1.js"
-      integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="
-      crossorigin="anonymous">
-    </script>
-    <script type="text/javascript">
-      $(document).ready(function () {
-          $(window).on('scroll', function () {
-              if ($(window).scrollTop() >= 20) { // use any value lower than the navbar height, [20] is an example
-                  $('.navbar').css({ // reducing the vertical padding from 10px to 10px
-                      'padding': '.5rem 1rem'
-                  });
-                  $('.header').css({
-                      'font-size': '20px',
-                  });
-              } else {
-                  $('.navbar').css({ // reset the vertical padding to its initial value [25px]
-                      'padding-top': '50px',
-                      'padding-bottom': '50px'
-                  });
-                  $('.header').css({
-                      'font-size': '100px',
-                  });
-              }
-          });
-      });
-    </script>
-  </head>
+<div class="container py-4">
+  <% @articles.each do |article| %>
+    <div class="article card">
+      <div class="card-header">
+        <h2><%= article.title %></h2>
+      </div>
+      <div class="card-body">
+        <p><%= article.text%></p>
 
-  <body>
-
-    <div class="container py-4">
-      
-      <% @articles.each do |article| %>
-        <div class="article card">
-          <div class="card-header">
-            <h2><%= article.title %></h2>
-          </div>
-          <div class="card-body">
-            <p><%= article.text%></p>
-
-            <div class="btn-group">
-              <%= link_to 'Show', article_path(article), :class => "btn btn-outline-secondary" %>
-            </div>
-
-          </div>
+        <div class="btn-group">
+          <%= link_to 'Show', article_path(article), :class => "btn btn-outline-secondary" %>
         </div>
-      <% end %>
-
+      </div>
     </div>
-
-  </body>
-</html>
+  <% end %>
+</div>
