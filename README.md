@@ -1,5 +1,5 @@
 # Very Fun Data Science
-Sushmita, Chelsea, and I doing some machine learning.
+Chelsea, Sushmita, and I doing some machine learning.
 
 Currently building the blog in Rails.
 
@@ -15,4 +15,7 @@ Currently building the blog in Rails.
 - [x] Create a login url /admin or something
 - [ ] Show authors on articles (add names to users schema)
 - [ ] Add author to articles model
-- [ ] Fix header and have movement happen only on blog
+- [x] Have header movement happen only on blog
+- [ ] Fix header
+- [ ] Style comments
+- [ ] Search by tag or anything
