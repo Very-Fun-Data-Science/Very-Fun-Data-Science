@@ -3,6 +3,7 @@
     <div class="article card">
       <div class="card-header">
         <h2><%= article.title %></h2>
+        <p><%= article.users.map(&:name).join(' & ') %></p>
       </div>
       <div class="card-body">
         <p><%= article.text%></p>

@@ -13,9 +13,10 @@ Currently building the blog in Rails.
 - [x] Create account page to edit and create new articles
 - [ ] Add an are you sure prompt before deletion
 - [x] Create a login url /admin or something
-- [ ] Show authors on articles (add names to users schema)
-- [ ] Add author to articles model
+- [x] Show authors on articles (add names to users schema)
+- [x] Add author to articles model
 - [x] Have header movement happen only on blog
 - [ ] Fix header
 - [ ] Style comments
 - [ ] Search by tag or anything
+- [ ] Make better back buttons
