@@ -20,3 +20,21 @@ Currently building the blog in Rails.
 - [ ] Style comments
 - [ ] Search by tag or anything
 - [ ] Make better back buttons
+- [ ] Github/Social media links 
+
+### For Haylee
+- [ ] Fix header 
+- [ ] Add tags 
+- [ ] Article Breakpoints 
+- [ ] Pagination 
+- [ ] By domain and PUT IT UP !
+
+### For Chelsea 
+- [ ] About page 
+- [ ] Style Comments  
+- [ ] Finish 1st article :) 
+
+### For Sush 
+- [ ] Twitter 
+- [ ] Very Fun Passwords (article and move repo)
+
