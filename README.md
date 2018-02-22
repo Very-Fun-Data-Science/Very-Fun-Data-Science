@@ -7,7 +7,7 @@ Currently building the blog in Rails.
 - [x] Create nav bar
 - [ ] About page
 - [ ] Be able to input images and markdown in articles
-- [ ] Add breakpoint to articles so they are only yea long
+- [x] Add breakpoint to articles so they are only yea long
 - [ ] Add pagination
 - [ ] Ability to add tags
 - [x] Create account page to edit and create new articles
@@ -20,21 +20,21 @@ Currently building the blog in Rails.
 - [ ] Style comments
 - [ ] Search by tag or anything
 - [ ] Make better back buttons
-- [ ] Github/Social media links 
+- [ ] Github/Social media links
 
 ### For Haylee
-- [ ] Fix header 
-- [ ] Add tags 
-- [ ] Article Breakpoints 
-- [ ] Pagination 
+- [ ] Fix header
+- [ ] Add tags
+- [x] Article Breakpoints
+- [ ] Pagination
+- [ ] Add markdown
 - [ ] By domain and PUT IT UP !
 
-### For Chelsea 
-- [ ] About page 
+### For Chelsea
+- [ ] About page
 - [ ] Style Comments  
-- [ ] Finish 1st article :) 
+- [ ] Finish 1st article :)
 
-### For Sush 
-- [ ] Twitter 
+### For Sush
+- [ ] Twitter
 - [ ] Very Fun Passwords (article and move repo)
-

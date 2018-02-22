@@ -6,7 +6,7 @@
         <p><%= article.users.map(&:name).join(' & ') %></p>
       </div>
       <div class="card-body">
-        <p><%= article.text%></p>
+        <p><%= truncate(format_markdown(article.text), length:500) %></p>
 
         <div class="btn-group">
           <%= link_to 'Show', article_path(article), :class => "btn btn-outline-secondary" %>
