@@ -8,7 +8,7 @@ Currently building the blog in Rails.
 - [ ] About page
 - [x] Be able to input images and markdown in articles
 - [x] Add breakpoint to articles so they are only yea long
-- [ ] Add pagination
+- [x] Add pagination
 - [ ] Ability to add tags
 - [x] Create account page to edit and create new articles
 - [ ] Add an are you sure prompt before deletion
@@ -19,14 +19,14 @@ Currently building the blog in Rails.
 - [ ] Fix header
 - [ ] Style comments
 - [ ] Search by tag or anything
-- [ ] Make better back buttons
+- [x] Make better back buttons
 - [ ] Github/Social media links
 
 ### For Haylee
 - [ ] Fix header
 - [ ] Add tags
 - [x] Article Breakpoints
-- [ ] Pagination
+- [x] Pagination
 - [x] Add markdown
 - [ ] By domain and PUT IT UP !
 
