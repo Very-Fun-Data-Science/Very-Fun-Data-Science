@@ -14,7 +14,7 @@
       </div>
     </div>
   <% end %>
-  <div>
-    <%= will_paginate @posts, :page_links => false, :class=> "text-center" %>
+  <div class="digg_pagination text-center">
+    <%= will_paginate @posts, :page_links => true, :class=> "d-inline-block" %>
   </div>
 </div>
