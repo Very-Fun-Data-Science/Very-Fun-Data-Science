@@ -6,7 +6,7 @@ Currently building the blog in Rails.
 - [x] Create auth to edit and create articles
 - [x] Create nav bar
 - [ ] About page
-- [ ] Be able to input images and markdown in articles
+- [x] Be able to input images and markdown in articles
 - [x] Add breakpoint to articles so they are only yea long
 - [ ] Add pagination
 - [ ] Ability to add tags
@@ -27,7 +27,7 @@ Currently building the blog in Rails.
 - [ ] Add tags
 - [x] Article Breakpoints
 - [ ] Pagination
-- [ ] Add markdown
+- [x] Add markdown
 - [ ] By domain and PUT IT UP !
 
 ### For Chelsea
