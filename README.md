@@ -9,7 +9,7 @@ Currently building the blog in Rails.
 - [x] Be able to input images and markdown in articles
 - [x] Add breakpoint to articles so they are only yea long
 - [x] Add pagination
-- [ ] Ability to add tags
+- [x] Ability to add tags
 - [x] Create account page to edit and create new articles
 - [ ] Add an are you sure prompt before deletion
 - [x] Create a login url /admin or something
@@ -24,11 +24,12 @@ Currently building the blog in Rails.
 
 ### For Haylee
 - [ ] Fix header
-- [ ] Add tags
+- [x] Add tags
 - [x] Article Breakpoints
 - [x] Pagination
 - [x] Add markdown
-- [ ] By domain and PUT IT UP !
+- [ ] Buy domain and PUT IT UP !
+- [ ] Add search
 
 ### For Chelsea
 - [ ] About page
@@ -40,5 +41,5 @@ Currently building the blog in Rails.
 - [ ] Very Fun Passwords (article and move repo)
 
 ### Running the app locally
-* From the `blog/` folder, run:
- * `rails s`
+* Run `rails s`
+* To login: Go to `/login`
