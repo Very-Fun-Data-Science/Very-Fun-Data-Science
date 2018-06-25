@@ -10,6 +10,11 @@
     <%= format_markdown(@article.text) %>
   </p>
 
+  <p> Tags:</p>
+  <p>
+    <%= @article.tag_list %>
+  </p>
+
   <div class="card">
     <h3 class="card-header">Comments</h3>
     <%= render @article.comments %>

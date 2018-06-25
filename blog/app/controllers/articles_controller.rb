@@ -49,7 +49,7 @@ class ArticlesController < ApplicationController
   private
 
   def article_params
-    params.require(:article).permit(:title, :text, user_ids: [])
+    params.require(:article).permit(:title, :tag_list, :text, user_ids: [])
   end
 
   def verify_admin

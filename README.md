@@ -38,3 +38,7 @@ Currently building the blog in Rails.
 ### For Sush
 - [ ] Twitter
 - [ ] Very Fun Passwords (article and move repo)
+
+### Running the app locally
+* From the `blog/` folder, run:
+ * `rails s`
