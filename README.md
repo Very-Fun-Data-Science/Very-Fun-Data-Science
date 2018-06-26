@@ -1,6 +1,4 @@
 # Very Fun Data Science
-Chelsea, Sushmita, and I doing some machine learning.
-
 Currently building the blog in Rails.
 
 - [x] Create auth to edit and create articles
@@ -23,7 +21,7 @@ Currently building the blog in Rails.
 - [ ] Github/Social media links
 
 ### For Haylee
-- [ ] Fix header
+- [x] Fix header
 - [x] Add tags
 - [x] Article Breakpoints
 - [x] Pagination
