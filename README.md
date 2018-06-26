@@ -19,6 +19,7 @@ Currently building the blog in Rails.
 - [ ] Search by tag or anything
 - [x] Make better back buttons
 - [ ] Github/Social media links
+- [ ] Make the admin section more contained -- easier to navigate within
 
 ### For Haylee
 - [x] Fix header
@@ -28,6 +29,7 @@ Currently building the blog in Rails.
 - [x] Add markdown
 - [ ] Buy domain and PUT IT UP !
 - [ ] Add search
+- [ ] Change to postgres
 
 ### For Chelsea
 - [ ] About page

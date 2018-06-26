@@ -10,14 +10,10 @@
     <%= format_markdown(@article.text) %>
   </p>
 
-  <!-- <p>
-    Tags: <%= @article.tag_list %>
-  </p> -->
-
   <p>
     Tags:
       <%= raw @article.tags.map {
-        |t| link_to t.name, article_tag_path(@article, t)
+        |t| link_to t, tag_path(t.name)
       }.join(', ') %>
   </p>
 

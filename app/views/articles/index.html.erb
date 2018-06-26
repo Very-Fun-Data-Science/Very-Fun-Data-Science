@@ -8,6 +8,13 @@
       <div class="card-body">
         <p><%= truncate(format_markdown(article.text), length:500) %></p>
 
+        <p>
+          Tags:
+            <%= raw article.tags.map {
+              |t| link_to t, tag_path(t.name)
+            }.join(', ') %>
+        </p>
+
         <div class="btn-group">
           <%= link_to 'Show', article_path(article), :class => "btn btn-outline-secondary" %>
         </div>
