@@ -10,9 +10,15 @@
     <%= format_markdown(@article.text) %>
   </p>
 
-  <p> Tags:</p>
+  <!-- <p>
+    Tags: <%= @article.tag_list %>
+  </p> -->
+
   <p>
-    <%= @article.tag_list %>
+    Tags:
+      <%= raw @article.tags.map {
+        |t| link_to t.name, article_tag_path(@article, t)
+      }.join(', ') %>
   </p>
 
   <div class="card">
