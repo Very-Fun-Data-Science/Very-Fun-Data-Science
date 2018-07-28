@@ -10,8 +10,8 @@ end
 gem 'rails', '~> 5.2.0'
 # vulnerability circumvented
 gem 'sprockets', '~> 3.7.2'
-# Use sqlite3 as the database for Active Record
-gem 'sqlite3'
+# Use postgres as the database for Active Record
+gem 'pg'
 # Use Puma as the app server
 gem 'puma', '~> 3.7'
 # Use SCSS for stylesheets
@@ -23,8 +23,6 @@ gem 'uglifier', '>= 1.3.0'
 gem 'redcarpet'
 # Front-end styles and utils
 gem 'bootstrap', '~> 4.0.0'
-# Gemfile for Rails 3+, Sinatra, and Merb
-gem 'will_paginate', '~> 3.1.0'
 
 # Use CoffeeScript for .coffee assets and views
 gem 'coffee-rails', '~> 4.2'
@@ -34,10 +32,6 @@ gem 'turbolinks', '~> 5'
 gem 'jbuilder', '~> 2.5'
 # Use Redis adapter to run Action Cable in production
 # gem 'redis', '~> 3.0'
-# Use ActiveModel has_secure_password
-gem 'bcrypt', '~> 3.1.7'
-# Tagging gem
-gem 'acts-as-taggable-on', '~> 6.0'
 
 # Use Capistrano for deployment
 # gem 'capistrano-rails', group: :development
