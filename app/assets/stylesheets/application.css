@@ -18,7 +18,6 @@
 @import "bootstrap";
 
 /* Scopes */
-@import "./articles.scss";
 
 body {
   height: 100%;
